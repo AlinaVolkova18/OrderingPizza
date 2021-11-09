@@ -1,0 +1,67 @@
+﻿<Window x:Class="OrderingPizza.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderingPizza"
+        mc:Ignorable="d"
+        Title="Доставка пиццы" Height="600" Width="900">
+    <Grid x:Name ="OrderingPizza"  Margin="0,0,-22,-139" RenderTransformOrigin="0.505,0.506" Background="MistyRose">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="445*" />
+            <ColumnDefinition Width="150*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Контакты" HorizontalAlignment="Left" Margin="169,10,0,0" VerticalAlignment="Top" Width="99" FontSize="18" Background="#FFF0BBE4" BorderBrush="#FFF3D2EC" Height="32"/>
+        <Button Content="Вход" HorizontalAlignment="Left" Margin="57,9,0,0" VerticalAlignment="Top" Width="88" FontSize="18" BorderBrush="#FFF3D2EC" Background="#FFF0BBE4" Height="33" RenderTransformOrigin="0.109,0.588"/>
+        <Border BorderBrush="#FFFFE4E1" BorderThickness="1" HorizontalAlignment="Left" Height="37" Margin="10,5,0,0" VerticalAlignment="Top" Width="42">
+            <Image Source="C:\Users\Андрей\Downloads\ph\h.png" Margin="-1,3,-1,-1"/>
+        </Border>
+        <Border BorderBrush="MistyRose" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="10,73,0,0" VerticalAlignment="Top" Width="664" Background="#FFF4D0F7">
+            <Image Source="C:\Users\Андрей\Downloads\ph\l.png" Margin="-17,-22,515,-23"/>
+        </Border>
+        <Border BorderBrush="#FFFFE4E1" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="10,470,0,0" VerticalAlignment="Top" Width="664" Background="#FFF4D0F7">
+            <Image Source="C:\Users\Андрей\Downloads\ph\d.png" Margin="-540,-41,-1,-38"/>
+        </Border>
+        <Border BorderBrush="#FFFFE4E1" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="10,272,0,0" VerticalAlignment="Top" Width="664" Background="#FFF4D0F7">
+            <Image Source="C:\Users\Андрей\Downloads\ph\e.png" Margin="-23,-17,535,-1"/>
+        </Border>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="144,73,0,0" TextWrapping="Wrap" Text="Шпинат и сыр&#xD;&#xA;" VerticalAlignment="Top" Width="360" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox HorizontalAlignment="Left" Height="65" Margin="144,108,0,0" TextWrapping="Wrap" Text="Ультратонкое тесто с легким шпинатом и мягким сыром &quot;кремчиз&quot;" VerticalAlignment="Top" Width="428" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="144,272,0,0" TextWrapping="Wrap" Text="Пепперони&#xA;" VerticalAlignment="Top" Width="360" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox HorizontalAlignment="Left" Height="65" Margin="144,307,0,0" TextWrapping="Wrap" Text="Пицца с ароматной корочкой с чесноком и смесью сыров" VerticalAlignment="Top" Width="428" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="144,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="18" FontWeight="Bold" FontStyle="Italic" Text="Мясная"/>
+        <TextBox HorizontalAlignment="Left" Height="65" Margin="144,505,0,0" TextWrapping="Wrap" Text="Пицца с пикантной пепперони, ветчиной, беконом и Моцарелой" VerticalAlignment="Top" Width="428" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="18"/>
+        <Button Content="Посмотреть весь список" HorizontalAlignment="Left" Margin="10,630,0,0" VerticalAlignment="Top" Width="240" FontSize="18" Background="#FFF0BBE4" BorderBrush="#FFF3D2EC" Height="32"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="577,122,0,0" TextWrapping="Wrap" Text="499р" VerticalAlignment="Top" Width="65" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="20" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="577,325,0,0" TextWrapping="Wrap" Text="399р" VerticalAlignment="Top" Width="65" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="20" FontWeight="Bold" FontStyle="Italic" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="577,523,0,0" TextWrapping="Wrap" Text="419р" VerticalAlignment="Top" Width="65" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="20" FontWeight="Bold" FontStyle="Italic" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Margin="144,566,0,0" VerticalAlignment="Top" Width="175" FontSize="18" BorderBrush="#FFF3D2EC" Background="#FFF0BBE4" Height="33" RenderTransformOrigin="0.109,0.588"/>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Margin="144,368,0,0" VerticalAlignment="Top" Width="175" FontSize="18" BorderBrush="#FFF3D2EC" Background="#FFF0BBE4" Height="33" RenderTransformOrigin="0.109,0.588"/>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Margin="144,169,0,0" VerticalAlignment="Top" Width="175" FontSize="18" BorderBrush="#FFF3D2EC" Background="#FFF0BBE4" Height="33" RenderTransformOrigin="0.109,0.588" Click="Button_Click"/>
+        <Border BorderBrush="#FFF4D0F7" BorderThickness="1" HorizontalAlignment="Left" Height="589" Margin="679,9,0,0" VerticalAlignment="Top" Width="215" Background="#FFF4D0F7" Grid.ColumnSpan="2">
+            <TextBox HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="Корзина" VerticalAlignment="Top" Width="157" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="18" FontWeight="Bold" Margin="57,9,-1,0"/>
+        </Border>
+        <Border BorderBrush="#FFF4D0F7" BorderThickness="1" HorizontalAlignment="Left" Height="50" Margin="0,19,0,0" VerticalAlignment="Top" Width="50" Grid.Column="1">
+            <Image Source="C:\Users\Андрей\Downloads\ph\s.png" Margin="3,-14,12,5" RenderTransformOrigin="2.74,0.821">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.31"/>
+                        <TranslateTransform X="-0.1" Y="0.401"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Border>
+        <Button Content="Посмотреть корзину" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="175" FontSize="18" BorderBrush="#FFF3D2EC" Background="#FFF0BBE4" Height="33" RenderTransformOrigin="0.109,0.588" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="10,237,0,0" TextWrapping="Wrap" Text="Создайте свою пиццу!" VerticalAlignment="Top" Width="200" Background="#FFF4D0F7" BorderBrush="#FFF4D0F7" FontSize="18" Grid.Column="1"/>
+        <Button Content="Создать свою пиццу" HorizontalAlignment="Left" Margin="10,429,0,0" VerticalAlignment="Top" Width="175" FontSize="18" BorderBrush="#FFF3D2EC" Background="#FFF0BBE4" Height="33" RenderTransformOrigin="0.109,0.588" Grid.Column="1"/>
+        <Border BorderBrush="#FFF4D0F7" BorderThickness="1" HorizontalAlignment="Left" Height="121" Margin="33,280,0,0" VerticalAlignment="Top" Width="138" Grid.Column="1" Background="#FFF4D0F7">
+            <Image Source="C:\Users\Андрей\Downloads\ph\g.png" Margin="-40,-18,-30,-16"/>
+        </Border>
+    </Grid>
+</Window>
