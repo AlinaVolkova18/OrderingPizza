@@ -97,7 +97,7 @@ namespace OrderingPizza.ViewModel
                 return addInStock ??
                   (addInStock = new RelayCommand(obj =>
                   {
-                      AllPizzaList all = new AllPizzaList(selectedPizza, selectedCount); //close window
+                      AllPizzaList all = new AllPizzaList(selectedPizza); //close window
                       all.Show();
                   }));
             }
