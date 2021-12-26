@@ -1,0 +1,15 @@
+﻿<Window x:Class="OrderingPizza.View.LogInMistake"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderingPizza.View"
+        mc:Ignorable="d"
+        Title="LogInMistake" Height="100" Width="300">
+    <Grid Background="FloralWhite">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            
+            <TextBlock Text="Неверный логин или пароль!" FontFamily="Times New Roman" FontSize="20" Foreground="Black"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -12,27 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DAL.Entity;
+using System.Data.SqlClient;
+using System.Data.Entity;
+using OrderingPizza.ViewModel;
+using System.Windows.Interactivity;
+using OrderingPizza.Model;
+using OrderingPizza.View;
 
-namespace OrderingPizza
+namespace OrderingPizza.View
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для CreateYourPizza.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CreateYourPizza : Window
     {
-        public MainWindow()
+        public CreateYourPizza()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            DataContext = new IngredientListViewModel(null);
         }
     }
 }

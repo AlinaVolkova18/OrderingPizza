@@ -1,0 +1,44 @@
+﻿<Window x:Class="OrderingPizza.View.CreateYourPizza"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderingPizza.View"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="CreateYourPizza" Height="600" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Text="Соберите свою пиццу!" Width="246"/>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="24,63,0,0" VerticalAlignment="Top" Width="232">
+            <Image Source="C:\Users\79206\Documents\STUDY\Конструирование ПО\Interface\ph\your.jpg" Margin="-35.8,-18.8,-33.8,-14.8"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="550" Margin="406,0,0,0" VerticalAlignment="Top" Width="378">
+            <ListBox ItemsSource="{Binding IngredientShow}" SelectedItem="{Binding SelectedIngredient}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-0.8,-0.8,0,0" Width="480">
+                <!--<CheckBox.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
+                </CheckBox.Effect>-->
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontSize="16" Margin="4" Text="{Binding Path=Name}" FontWeight="Bold" FontStyle="Italic" FontFamily="Times New Roman" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0">
+                                <TextBlock FontSize="16" Margin="0 4" Text="{Binding Path=Cost}" />
+                                <TextBlock Text="р." FontFamily="Times New Roman" Margin="0 4" FontSize="16"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0">
+                                <TextBlock Margin="10" FontSize="14" Text="Количество" />
+                                <xctk:IntegerUpDown Width="40" Height="20" Value="{Binding SelectedCount}" Minimum="1"/>
+                                <Button Content="Добавить" Margin="20,4,4,4" Background="#727077" BorderBrush="{x:Null}" Command="{Binding AddIngredientInPizza}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+    </Grid>
+</Window>
+
+
